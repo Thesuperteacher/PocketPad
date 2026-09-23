@@ -1,0 +1,3 @@
+#!/bin/sh
+# Fail closed if Python or the publication check is unavailable.
+exec python scripts/verify_publication.py

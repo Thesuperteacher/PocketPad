@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.pocketpad.remote'
+    compileSdk 35
+    defaultConfig { applicationId 'com.pocketpad.remote'; minSdk 24; targetSdk 35; versionCode 6; versionName '0.3.1'; testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    implementation 'androidx.core:core:1.13.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'junit:junit:4.13.2'
+}
